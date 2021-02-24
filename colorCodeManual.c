@@ -23,6 +23,6 @@ void printRefernceManual()
     ColorPair colorPair = GetColorFromPairNumber(pairNumber);
     char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
     ColorPairToString(&colorPair, colorPairNames);
-    printf("color number-> %d \t color pair-> %s \t Major color->%d \t Minor color->%d \n",pairNumber,colorPairNames,colorPair->majorColor,colorPair->minorColor);
+    printf("color number-> %d \t color pair-> %s \t Major color->%d \t Minor color->%d \n", pairNumber, colorPairNames, colorPair.majorColor, colorPair.minorColor);
     }
 }
