@@ -8,4 +8,4 @@
 enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
 enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
 
-#endif /* def MAIN_PRV_H_ */
+#endif /* MAIN_PRV_H_ */
