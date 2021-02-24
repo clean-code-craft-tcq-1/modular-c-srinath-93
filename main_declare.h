@@ -3,7 +3,11 @@
 
 #include <stdio.h>
 #include <assert.h>
-#include "main_prv.h"
+
+typedef struct {
+    enum MajorColor majorColor;
+    enum MinorColor minorColor;
+} ColorPair;
 
 extern void ColorPairToString(const ColorPair* colorPair, char* buffer);
 
