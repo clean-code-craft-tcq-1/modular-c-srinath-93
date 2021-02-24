@@ -1,6 +1,3 @@
-#ifndef MAIN_PRV_H
-#define MAIN_PRV_H
-
 #include <stdio.h>
 #include <assert.h>
 
@@ -33,5 +30,3 @@ extern int GetPairNumberFromColor(const ColorPair* colorPair);
 extern void testNumberToPair(int pairNumber, enum MajorColor expectedMajor, enum MinorColor expectedMinor);
 
 extern void testPairToNumber(enum MajorColor major, enum MinorColor minor, int expectedPairNumber);
-
-#endif /* MAIN_PRV_H */
