@@ -1,7 +1,7 @@
 #include "main_prv.h"
 #include "main_declare.h"
 
-void testPairToNumber(enum MajorColor major, enum MinorColor minor, int expectedPairNumber)
+void verifyPairToNumber(enum MajorColor major, enum MinorColor minor, int expectedPairNumber)
 {
     ColorPair colorPair;
     colorPair.majorColor = major;
