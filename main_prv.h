@@ -1,5 +1,6 @@
-#include <stdio.h>
-#include <assert.h>
+#ifndef MAIN_PRV_H_
+#define MAIN_PRV_H_
+
 enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
 enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
 
@@ -19,3 +20,5 @@ typedef struct {
     enum MajorColor majorColor;
     enum MinorColor minorColor;
 } ColorPair;
+
+#endif /* def MAIN_PRV_H_ */
