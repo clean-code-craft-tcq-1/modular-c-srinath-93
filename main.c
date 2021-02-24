@@ -20,6 +20,8 @@ int main() {
 
     verifyPairToNumber(BLACK, ORANGE, 12);
     verifyPairToNumber(VIOLET, SLATE, 25);
+    
+    printRefernceManual();
 
     return 0;
 }
