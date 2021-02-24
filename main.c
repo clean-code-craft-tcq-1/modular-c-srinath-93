@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
+#include "main_prv.h"
 #include "main_declare.h"
 
 int main() {
