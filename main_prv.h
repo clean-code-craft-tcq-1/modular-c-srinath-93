@@ -16,9 +16,4 @@ const int MAX_COLORPAIR_NAME_CHARS = 16;
 int numberOfMinorColors =
     sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
 
-typedef struct {
-    enum MajorColor majorColor;
-    enum MinorColor minorColor;
-} ColorPair;
-
 #endif /* def MAIN_PRV_H_ */
