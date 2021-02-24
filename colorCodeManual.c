@@ -18,12 +18,12 @@ extern int numberOfMinorColors;
 void printRefernceManual()
 {
     int pairNumber;
+    printf("\nPrinting Color code reference manual\n");
     for(pairNumber=1;pairNumber<(numberOfMajorColors*numberOfMinorColors);pairNumber++)
     {
     ColorPair colorPair = GetColorFromPairNumber(pairNumber);
     char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
     ColorPairToString(&colorPair, colorPairNames);
-    printf("\nPrinting Color code reference manual\n");
     printf("color number-> %d \t color pair-> %s \tMajor color->%d \t Minor color->%d \n", pairNumber, colorPairNames, colorPair.majorColor, colorPair.minorColor);
     }
 }
