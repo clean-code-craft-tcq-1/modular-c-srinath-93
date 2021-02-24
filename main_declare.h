@@ -19,4 +19,6 @@ extern void verifyNumberToPair(int pairNumber, enum MajorColor expectedMajor, en
 
 extern void verifyPairToNumber(enum MajorColor major, enum MinorColor minor, int expectedPairNumber);
 
+extern void printRefernceManual(void);
+
 #endif /* MAIN_DECLARE_H_ */
