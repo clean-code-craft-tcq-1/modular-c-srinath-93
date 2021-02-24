@@ -3,9 +3,7 @@
 
 extern const int MAX_COLORPAIR_NAME_CHARS;
 
-void testNumberToPair(int pairNumber,
-    enum MajorColor expectedMajor,
-    enum MinorColor expectedMinor)
+void testNumberToPair(int pairNumber, enum MajorColor expectedMajor, enum MinorColor expectedMinor)
 {
     ColorPair colorPair = GetColorFromPairNumber(pairNumber);
     char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
