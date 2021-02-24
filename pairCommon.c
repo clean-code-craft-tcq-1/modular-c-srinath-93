@@ -1,3 +1,4 @@
+#include "main_prv.h"
 #include "main_declare.h"
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer)
