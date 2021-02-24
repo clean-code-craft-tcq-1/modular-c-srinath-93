@@ -1,4 +1,7 @@
+#include "main_prv.h"
 #include "main_declare.h"
+
+extern const int MAX_COLORPAIR_NAME_CHARS;
 
 void testNumberToPair(int pairNumber,
     enum MajorColor expectedMajor,
