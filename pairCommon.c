@@ -1,12 +1,15 @@
 #include "main_prv.h"
+#include "main_declare.h"
 
-void ColorPairToString(const ColorPair* colorPair, char* buffer) {
+void ColorPairToString(const ColorPair* colorPair, char* buffer)
+{
     sprintf(buffer, "%s %s",
         MajorColorNames[colorPair->majorColor],
         MinorColorNames[colorPair->minorColor]);
 }
 
-ColorPair GetColorFromPairNumber(int pairNumber) {
+ColorPair GetColorFromPairNumber(int pairNumber)
+{
     ColorPair colorPair;
     int zeroBasedPairNumber = pairNumber - 1;
     colorPair.majorColor = 
@@ -16,7 +19,8 @@ ColorPair GetColorFromPairNumber(int pairNumber) {
     return colorPair;
 }
 
-int GetPairNumberFromColor(const ColorPair* colorPair) {
+int GetPairNumberFromColor(const ColorPair* colorPair)
+{
     return colorPair->majorColor * numberOfMinorColors +
             colorPair->minorColor + 1;
 }
