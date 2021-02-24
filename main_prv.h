@@ -24,19 +24,14 @@ typedef struct {
     enum MinorColor minorColor;
 } ColorPair;
 
-void ColorPairToString(const ColorPair* colorPair, char* buffer);
+extern void ColorPairToString(const ColorPair* colorPair, char* buffer);
 
-ColorPair GetColorFromPairNumber(int pairNumber);
+extern ColorPair GetColorFromPairNumber(int pairNumber);
 
-int GetPairNumberFromColor(const ColorPair* colorPair);
+extern int GetPairNumberFromColor(const ColorPair* colorPair);
 
-void testNumberToPair(int pairNumber,
-    enum MajorColor expectedMajor,
-    enum MinorColor expectedMinor);
+extern void testNumberToPair(int pairNumber, enum MajorColor expectedMajor, enum MinorColor expectedMinor);
 
-void testPairToNumber(
-    enum MajorColor major,
-    enum MinorColor minor,
-    int expectedPairNumber);
+extern void testPairToNumber(enum MajorColor major, enum MinorColor minor, int expectedPairNumber);
 
 #endif /* MAIN_PRV_H */
